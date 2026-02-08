@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Burgers & Fries | Food Circuit</title>
+
+<style>
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===== BACKGROUND ===== */
+body {
+    font-family: "Times New Roman", Times, serif;
+    background:
+        linear-gradient(rgba(15,35,20,0.55), rgba(15,35,20,0.55)),
+        url("Images/BG.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===== LOGO SECTION ===== */
+.logo-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 13cm;
+    height: 13cm;
+    object-fit: contain;
+}
+
+.logo-gap {
+    height: 2cm;
+}
+
+/* ===== ITEM SECTION ===== */
+.item {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* IMAGE WRAPPER */
+.image-wrapper {
+    position: relative;
+    padding: 1cm;
+}
+
+/* IMAGE */
+.image-wrapper img {
+    width: 17cm;
+    height: 17cm;
+    object-fit: cover;
+    display: block;
+}
+
+/* TEXT BOX */
+.text-box {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    background: #E8D2A8;
+
+    padding: 25px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    color: #5A3A1E;
+    text-align: center;
+    line-height: 1.6;
+}
+
+/* LEFT / RIGHT */
+.left { left: 1cm; }
+.right { right: 1cm; }
+
+/* ===== HOME BUTTON ===== */
+.home-section {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-btn {
+    text-decoration: none;
+    background: #E8D2A8;
+    color: #5A3A1E;
+    padding: 18px 36px;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 8px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- LOGO -->
+<section class="logo-section">
+    <img src="Images/LOGO.jpg" alt="Food Circuit Logo" class="logo">
+    <div class="logo-gap"></div>
+</section>
+
+<!-- 1 -->
+<section class="item">
+    <div class="image-wrapper">
+        <img src="Images/BURGER.jpg">
+        <div class="text-box left">
+            <strong>Burger</strong><br><br>
+            A comforting classic that feels warm, familiar,
+            and deeply satisfying with every slow bite.
+        </div>
+    </div>
+</section>
+
+<!-- 2 -->
+<section class="item">
+    <div class="image-wrapper">
+        <img src="Images/cheeseburger.jpg">
+        <div class="text-box right">
+            <strong>Cheeseburger</strong><br><br>
+            Rich and indulgent, built around softness and depth,
+            offering pure comfort without excess.
+        </div>
+    </div>
+</section>
+
+<!-- 3 -->
+<section class="item">
+    <div class="image-wrapper">
+        <img src="Images/doublepaddyburger.jpg">
+        <div class="text-box left">
+            <strong>Double Patty Burger</strong><br><br>
+            Bold, hearty, and confident,
+            made for moments that call for something extra.
+        </div>
+    </div>
+</section>
+
+<!-- 4 -->
+<section class="item">
+    <div class="image-wrapper">
+        <img src="Images/onionringburger.jpg">
+        <div class="text-box right">
+            <strong>Onion Ring Burger</strong><br><br>
+            A playful contrast of textures that feels indulgent,
+            yet carefully balanced.
+        </div>
+    </div>
+</section>
+
+<!-- 5 -->
+<section class="item">
+    <div class="image-wrapper">
+        <img src="Images/classicsalted.jpg">
+        <div class="text-box left">
+            <strong>Classic Salted Fries</strong><br><br>
+            Light, golden, and timeless,
+            made to be enjoyed slowly or shared easily.
+        </div>
+    </div>
+</section>
+
+<!-- 6 -->
+<section class="item">
+    <div class="image-wrapper">
+        <img src="Images/FRIES.jpg">
+        <div class="text-box right">
+            <strong>Fries</strong><br><br>
+            Warm and grounding,
+            the kind of comfort that never needs explanation.
+        </div>
+    </div>
+</section>
+
+<!-- 7 -->
+<section class="item">
+    <div class="image-wrapper">
+        <img src="Images/fries1.jpg">
+        <div class="text-box left">
+            <strong>Golden Fries</strong><br><br>
+            Simple pleasures done right,
+            offering a quiet sense of satisfaction.
+        </div>
+    </div>
+</section>
+
+<!-- 8 — FIXED IMAGE -->
+<section class="item">
+    <div class="image-wrapper">
+        <img src="Images/periperifries.jpg">
+        <div class="text-box right">
+            <strong>Peri Peri Fries</strong><br><br>
+            A gentle heat that lifts the experience,
+            adding energy without overpowering.
+        </div>
+    </div>
+</section>
+
+<!-- 9 -->
+<section class="item">
+    <div class="image-wrapper">
+        <img src="Images/salsafries.jpg">
+        <div class="text-box left">
+            <strong>Salsa Fries</strong><br><br>
+            Bright, lively, and expressive,
+            made for those who enjoy layered flavors.
+        </div>
+    </div>
+</section>
+
+<!-- HOME BUTTON -->
+<section class="home-section">
+    <a href="index.html" class="home-btn">← Back to Home</a>
+</section>
+
+</body>
+</html>

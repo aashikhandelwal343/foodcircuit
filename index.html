@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Food Circuit</title>
+
+<style>
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===== BACKGROUND ===== */
+body {
+    font-family: "Times New Roman", Times, serif;
+    background:
+        linear-gradient(rgba(15,35,20,0.55), rgba(15,35,20,0.55)),
+        url("Images/BG.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ===== NAV TABS ===== */
+.nav {
+    position: fixed;
+    top: 20px;
+    z-index: 1000;
+    display: flex;
+    gap: 14px;
+}
+
+.nav a {
+    text-decoration: none;
+    background: #E8D2A8;
+    color: #5A3A1E;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    border-radius: 6px;
+}
+
+/* ===== HERO (LOGO) ===== */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 12cm;
+    height: 12cm;
+    object-fit: contain;
+}
+
+/* ===== SECTIONS ===== */
+.image-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===== RECTANGLES ===== */
+.vertical-rect {
+    width: 15cm;
+    height: 22cm;
+    object-fit: contain;
+    display: block;
+}
+
+/* ===== MENU OVERLAY ===== */
+.menu-container {
+    position: relative;
+}
+
+.menu-text {
+    position: absolute;
+    inset: 7%;
+    background: #E8D2A8;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+    color: #5A3A1E;
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* ===== ABOUT OVERLAY ===== */
+.about-container {
+    position: relative;
+}
+
+.about-text {
+    position: absolute;
+    inset: 7%;
+    background: #F6F0DD;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    line-height: 1.8;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION TABS -->
+<div class="nav">
+    <a href="BURGERFRIES.html">Burgers & Fries</a>
+    <a href="#">Pizza</a>
+    <a href="#">Drinks</a>
+    <a href="#">Sweet Treats</a>
+    <a href="#">Tacos & Burritos</a>
+</div>
+
+<!-- LOGO -->
+<section class="hero">
+    <img src="Images/LOGO.jpg" alt="Food Circuit Logo" class="logo">
+</section>
+
+<!-- MENU -->
+<section class="image-section">
+    <div class="menu-container">
+        <img src="Images/MENU.jpg" alt="Menu" class="vertical-rect">
+        <div class="menu-text">
+            <p>
+                Menu<br><br>
+                Classic Veg Burger<br>
+                Cheese Loaded Burger<br>
+                Grilled Paneer Sandwich<br>
+                Crispy French Fries<br>
+                Peri-Peri Fries<br>
+                Margherita Pizza<br>
+                Farmhouse Pizza<br>
+                Cheese Garlic Bread<br>
+                Veg Tacos<br>
+                Mexican Bean Tacos<br>
+                Cold Coffee<br>
+                Fresh Lime Soda
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT US -->
+<section class="image-section">
+    <div class="about-container">
+        <img src="Images/ABOUTUS.jpg" alt="About Us" class="vertical-rect">
+        <div class="about-text">
+            <p>
+                About Us<br><br>
+                Food Circuit was born from a simple idea — food is more than what’s on the plate.
+                It’s a journey of flavors, cultures, and moments shared around a table.<br><br>
+                Simple. Honest. Memorable.
+            </p>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
